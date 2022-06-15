@@ -16,7 +16,7 @@
          resolveDependencies="true"
 >
     <testsuites>
-        <testsuite name="User tests">
+        <testsuite name="Country tests">
             <directory>./tests</directory>
         </testsuite>
     </testsuites>

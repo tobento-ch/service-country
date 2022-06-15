@@ -1,6 +1,6 @@
-# User Service
+# Country Service
 
-A user and address interface for PHP applications.
+A country interface for PHP applications.
 
 ## Table of Contents
 
@@ -8,28 +8,25 @@ A user and address interface for PHP applications.
     - [Requirements](#requirements)
     - [Highlights](#highlights)
 - [Documentation](#documentation)
-    - [User](#user)
-        - [Create User](#create-user)
-        - [User Factory](#user-factory)
-        - [User Interface](#user-interface)
-    - [Address](#address)
-        - [Create Address](#create-address)
-        - [Address Factory](#address-factory)
-        - [Address Interface](#address-interface)
-    - [Addresses](#addresses)
-        - [Create Addresses](#create-addresses)
-        - [Addresses Factory](#addresses-factory)
-        - [Addresses Interface](#addresses-interface)
-    - [Addressable](#addressable)
+    - [Country Repository](#country-repository)
+    - [Country Repository Interface](#country-repository-interface)
+    - [Country](#country)
+        - [Create Country](#create-country)
+        - [Country Factory](#country-factory)
+        - [Country Interface](#country-interface)
+    - [Countries](#countries)
+        - [Create Countries](#create-countries)
+        - [Countries Factory](#countries-factory)
+        - [Countries Interface](#countries-interface)      
 - [Credits](#credits)
 ___
 
 # Getting started
 
-Add the latest version of the user service project running this command.
+Add the latest version of the country service project running this command.
 
 ```
-composer require tobento/service-user
+composer require tobento/service-country
 ```
 
 ## Requirements
@@ -43,382 +40,216 @@ composer require tobento/service-user
 
 # Documentation
 
-## User
+## Country Repository
 
-### Create User
-
-```php
-use Tobento\Service\User\User;
-use Tobento\Service\User\UserInterface;
-use Tobento\Service\User\Addressable;
-
-$user = new User(username: 'username');
-
-var_dump($user instanceof UserInterface);
-// bool(true)
-
-var_dump($user instanceof Addressable);
-// bool(true)
-```
-
-Check out the [User Interface](#user-interface) to learn more about the interface.
-
-Check out [Addressable](#addressable) to learn more about the interface.
-
-### User Factory
-
-Easily create a user with the provided user factory:
-
-**createUser**
+The country repository loads the countries from json files.
 
 ```php
-use Tobento\Service\User\UserFactory;
-use Tobento\Service\User\UserFactoryInterface;
-use Tobento\Service\User\UserInterface;
-use Tobento\Service\User\AddressesFactoryInterface;
+use Tobento\Service\Country\CountryRepository;
+use Tobento\Service\Country\CountryRepositoryInterface;
+use Tobento\Service\Country\CountriesFactoryInterface;
 
-$userFactory = new UserFactory(
-    addressesFactory: null, // null|AddressesFactoryInterface
+$countryRepository = new CountryRepository(
+    locale: 'en', // default
+    localeFallbacks: ['es' => 'fr'],
+    localeMapping: ['en-GB' => 'en'],
+    countriesFactory: null, // null|CountriesFactoryInterface
+    directory: null, // if null it loads from the provided country files.
 );
 
-var_dump($userFactory instanceof UserFactoryInterface);
-// bool(true)
-
-$user = $userFactory->createUser(username: 'username');
-
-var_dump($user instanceof UserInterface);
+var_dump($countryRepository instanceof CountryRepositoryInterface);
 // bool(true)
 ```
 
-**Parameters:**
+## Country Repository Interface
 
 ```php
-use Tobento\Service\User\UserFactory;
-use Tobento\Service\User\AddressesInterface;
+use Tobento\Service\Country\CountryRepository;
+use Tobento\Service\Country\CountryRepositoryInterface;
 
-$userFactory = new UserFactory();
+$countryRepository = new CountryRepository();
 
-$user = $userFactory->createUser(
-    id: 1,
-    number: 'user1',
-    active: true,
-    type: 'private',
-    password: '',
-    username: '',
-    email: 'user@example.com',
-    smartphone: '',
-    locale: 'de-CH',
-    birthday: '',
-    dateCreated: '',
-    dateUpdated: '',
-    dateLastVisited: '',
-    image: [],
-    newsletter: false,
-    addresses: null, // null|AddressesInterface
+var_dump($countryRepository instanceof CountryRepositoryInterface);
+// bool(true)
+```
+
+**findCountry**
+
+Returns a single country by the specified parameters or null if not found.
+
+```php
+use Tobento\Service\Country\CountryRepository;
+use Tobento\Service\Country\CountryInterface;
+
+$countryRepository = new CountryRepository();
+
+$country = $countryRepository->findCountry(code: 'US');
+
+var_dump($country instanceof CountryInterface);
+// bool(true)
+
+var_dump($country->name());
+// string(13) "United States"
+
+// find by specific locale
+$country = $countryRepository->findCountry(
+    code: 'US',
+    locale: 'de'
 );
+
+var_dump($country->name());
+string(18) "Vereinigte Staaten"
 ```
 
-**createUserFromArray**
+Check out the [Country Interface](#country-interface) to learn more about the interface.
+
+**findCountries**
+
+Returns all countries found by the specified parameters.
 
 ```php
-use Tobento\Service\User\UserFactory;
+use Tobento\Service\Country\CountryRepository;
+use Tobento\Service\Country\CountriesInterface;
 
-$userFactory = new UserFactory();
+$countryRepository = new CountryRepository();
 
-$user = $userFactory->createUserFromArray([
-    'username' => 'username',
-]);
-```
+$countries = $countryRepository->findCountries();
 
-If you want to create a user with addresses, you need to set an AddressesFactory, otherwise addresses gets not created.
-
-```php
-use Tobento\Service\User\UserFactory;
-use Tobento\Service\User\AddressesFactory;
-
-$userFactory = new UserFactory(new AddressesFactory());
-
-$user = $userFactory->createUserFromArray([
-    'username' => 'username',
-    'addresses' => [
-        ['key' => 'payment'],
-        ['key' => 'shipping'],
-    ],
-]);
-```
-
-
-### User Interface
-
-```php
-use Tobento\Service\User\UserFactory;
-use Tobento\Service\User\UserInterface;
-
-$userFactory = new UserFactory();
-
-$user = $userFactory->createUser(username: 'username');
-
-var_dump($user instanceof UserInterface);
+var_dump($countries instanceof CountriesInterface);
 // bool(true)
 
-var_dump($user->id());
-// int(0)
-
-var_dump($user->number());
-// string(0) ""
-
-var_dump($user->active());
-// bool(true)
-
-var_dump($user->type());
-// string(0) ""
-
-var_dump($user->password());
-// string(0) ""
-
-var_dump($user->username());
-// string(8) "username"
-
-var_dump($user->email());
-// string(0) ""
-
-var_dump($user->smartphone());
-// string(0) ""
-
-var_dump($user->locale());
-// string(0) ""
-
-var_dump($user->birthday());
-// string(0) ""
-
-var_dump($user->dateCreated());
-// string(0) ""
-
-var_dump($user->dateUpdated());
-// string(0) ""
-
-var_dump($user->dateLastVisited());
-// string(0) ""
-
-var_dump($user->image());
-// array(0) { }
-
-var_dump($user->newsletter());
-// bool(false)
-
-var_dump($user->greetingSalutation());
-// string(5) "greet"
-
-var_dump($user->greeting());
-// string(8) "username"
-```
-
-## Address
-
-### Create Address
-
-```php
-use Tobento\Service\User\Address;
-use Tobento\Service\User\AddressInterface;
-
-$address = new Address(key: 'shipping');
-
-var_dump($address instanceof AddressInterface);
-// bool(true)
-```
-
-### Address Factory
-
-Easily create an address with the provided address factory:
-
-**createAddress**
-
-```php
-use Tobento\Service\User\AddressFactory;
-use Tobento\Service\User\AddressFactoryInterface;
-use Tobento\Service\User\AddressInterface;
-
-$addressFactory = new AddressFactory();
-
-var_dump($addressFactory instanceof AddressFactoryInterface);
-// bool(true)
-
-$address = $addressFactory->createAddress(key: 'shipping');
-
-var_dump($address instanceof AddressInterface);
-// bool(true)
-```
-
-**Parameters:**
-
-```php
-use Tobento\Service\User\AddressFactory;
-
-$addressFactory = new AddressFactory();
-
-$address = $addressFactory->createAddress(
-    key: 'payment',
-    id: 0,
-    userId: 0,
-    group: '',
-    defaultAddress: false,
-    salutation: 'mr',
-    name: '',
-    firstname: 'Adam',
-    lastname: 'Smith',
-    company: '',
-    address1: 'Musterstrasse',
-    address2: '',
-    address3: '',
-    postcode: '34',
-    city: 'Bern',
-    state: '',
-    countryKey: 'CH',
-    country: 'Schweiz',
-    email: '',
-    telephone: '',
-    smartphone: '',
-    fax: '',
-    website: '',
+// find by specific locale and group
+$countries = $countryRepository->findCountries(
     locale: 'de',
-    birthday: '',
-    notice: '',
-    info: '',
-    selectable: false,
+    group: 'shipping',
 );
 ```
 
-**createAddressFromArray**
+Check out the [Countries Interface](#countries-interface) to learn more about the interface.
+
+## Country
+
+### Create Country
 
 ```php
-use Tobento\Service\User\AddressFactory;
+use Tobento\Service\Country\Country;
+use Tobento\Service\Country\CountryInterface;
 
-$addressFactory = new AddressFactory();
+$country = new Country(code: 'US');
 
-$address = $addressFactory->createAddressFromArray([
-    'key' => 'payment',
+var_dump($country instanceof CountryInterface);
+// bool(true)
+```
+
+Check out the [Country Interface](#country-interface) to learn more about the interface.
+
+### Country Factory
+
+Easily create a country with the provided countryfactory:
+
+**createCountry**
+
+```php
+use Tobento\Service\Country\CountryFactory;
+use Tobento\Service\Country\CountryFactoryInterface;
+use Tobento\Service\Country\CountryInterface;
+
+$countryFactory = new CountryFactory();
+
+var_dump($countryFactory instanceof CountryFactoryInterface);
+// bool(true)
+
+$country = $countryFactory->createCountry(code: 'CH');
+
+var_dump($country instanceof CountryInterface);
+// bool(true)
+```
+
+**Parameters:**
+
+```php
+use Tobento\Service\Country\CountryFactory;
+
+$countryFactory = new CountryFactory();
+
+$country = $countryFactory->createCountry(
+    code: 'US',
+    code3: 'USA',
+    numericCode: '840',
+    currencyKey: 'USD',
+    locale: 'en',
+    name: 'United States',
+    region: '',
+    continent: 'North America',
+    id: 840,
+    active: true,
+    group: 'shipping',
+    priority: 100,
+);
+```
+
+**createCountryFromArray**
+
+```php
+use Tobento\Service\Country\CountryFactory;
+
+$countryFactory = new CountryFactory();
+
+$country = $countryFactory->createCountryFromArray([
+    'code' => 'US',
 ]);
 ```
 
-### Address Interface
-
-**getters**
+### Country Interface
 
 ```php
-use Tobento\Service\User\AddressFactory;
-use Tobento\Service\User\AddressInterface;
+use Tobento\Service\Country\CountryInterface;
+use Tobento\Service\Country\CountryRepository;
 
-$addressFactory = new AddressFactory();
+$countryRepository = new CountryRepository();
+$country = $countryRepository->findCountry('US');
 
-$address = $addressFactory->createAddress(key: 'shipping');
-
-var_dump($address instanceof AddressInterface);
+var_dump($country instanceof CountryInterface);
 // bool(true)
 
-var_dump($address->key());
-// string(8) "shipping"
+var_dump($country->code());
+// string(2) "US"
 
-var_dump($address->id());
+var_dump($country->code3());
+// string(3) "USA"
+
+var_dump($country->numericCode());
+// string(3) "840"
+
+var_dump($country->currencyKey());
+// string(3) "USD"
+
+var_dump($country->locale());
+// string(2) "en"
+
+var_dump($country->name());
+// string(13) "United States"
+
+var_dump($country->region());
+// string(0) ""
+
+var_dump($country->continent());
+// string(13) "North America"
+
+var_dump($country->timezones());
+// array(29) { [0]=> string(12) "America/Adak" ... }
+
+var_dump($country->id());
 // int(0)
 
-var_dump($address->userId());
+var_dump($country->active());
+// bool(true)
+
+var_dump($country->group());
+// string(0) ""
+
+var_dump($country->priority());
 // int(0)
-
-var_dump($address->group());
-// string(0) ""
-
-var_dump($address->isDefaultAddress());
-// bool(false)
-
-var_dump($address->salutation());
-// string(0) ""
-
-var_dump($address->name());
-// string(0) ""
-
-var_dump($address->firstname());
-// string(0) ""
-
-var_dump($address->lastname());
-// string(0) ""
-
-var_dump($address->hasFullname());
-// bool(false)
-
-var_dump($address->fullname());
-// string(0) ""
-
-var_dump($address->company());
-// string(0) ""
-
-var_dump($address->address1());
-// string(0) ""
-
-var_dump($address->address2());
-// string(0) ""
-
-var_dump($address->address3());
-// string(0) ""
-
-var_dump($address->postcode());
-// string(0) ""
-
-var_dump($address->city());
-// string(0) ""
-
-var_dump($address->state());
-// string(0) ""
-
-var_dump($address->hasPostcodeCity());
-// bool(false)
-
-var_dump($address->postcodeCity());
-// string(0) ""
-
-var_dump($address->countryKey());
-// string(0) ""
-
-var_dump($address->country());
-// string(0) ""
-
-var_dump($address->hasContact());
-// bool(false)
-
-var_dump($address->email());
-// string(0) ""
-
-var_dump($address->telephone());
-// string(0) ""
-
-var_dump($address->smartphone());
-// string(0) ""
-
-var_dump($address->fax());
-// string(0) ""
-
-var_dump($address->website());
-// string(0) ""
-
-var_dump($address->locale());
-// string(0) ""
-
-var_dump($address->birthday());
-// string(0) ""
-
-var_dump($address->notice());
-// string(0) ""
-
-var_dump($address->info());
-// string(0) ""
-
-var_dump($address->selectable());
-// bool(false)
-
-var_dump($address->greetingSalutation());
-// string(5) "greet"
-
-var_dump($address->greeting());
-// string(0) ""
 ```
 
 **with methods**
@@ -426,373 +257,428 @@ var_dump($address->greeting());
 The with methods will return a new instance.
 
 ```php
-use Tobento\Service\User\AddressFactory;
+use Tobento\Service\Country\CountryInterface;
+use Tobento\Service\Country\CountryRepository;
 
-$addressFactory = new AddressFactory();
+$countryRepository = new CountryRepository();
+$country = $countryRepository->findCountry('US');
 
-$address = $addressFactory->createAddress(key: 'shipping');
+var_dump($country instanceof CountryInterface);
+// bool(true)
 
-$address = $address->withGroup('addressbook');
+$country = $country->withCurrencyKey('USD');
 
-$address = $address->withDefaultAddress(false);
+$country = $country->withLocale('de');
 
-$address = $address->withSalutation('mr');
+$country = $country->withName('Vereinigte Staaten');
 
-$address = $address->withName('Name');
+$country = $country->withRegion('Region');
 
-$address = $address->withFirstname('John');
+$country = $country->withId(2345);
 
-$address = $address->withLastname('Smith');
+$country = $country->withActive(false);
 
-$address = $address->withCompany('Name of Company');
+$country = $country->withGroup('payment');
 
-$address = $address->withAddress1('Address Line 1');
-
-$address = $address->withAddress2('Address Line 2');
-
-$address = $address->withAddress3('Address Line 3');
-
-$address = $address->withPostcode('3000');
-
-$address = $address->withCity('Bern');
-
-$address = $address->withState('BE');
-
-$address = $address->withCountryKey('CH');
-
-$address = $address->withCountry('Schweiz');
-
-$address = $address->withEmail('user@example.com');
-
-$address = $address->withTelephone('');
-
-$address = $address->withSmartphone('');
-
-$address = $address->withFax('');
-
-$address = $address->withWebsite('example.com');
-
-$address = $address->withLocale('de-CH');
-
-$address = $address->withBirthday('');
-
-$address = $address->withNotice('Some message');
-
-$address = $address->withInfo('Some message');
-
-$address = $address->withSelectable(false);
-
-$address = $address->withGreeting(
-    greeting: 'John Smith',
-    salutation: 'mr'
-);
+$country = $country->withPriority(150);
 ```
 
-## Addresses
+## Countries
 
-### Create Addresses
+### Create Countries
 
 ```php
-use Tobento\Service\User\Addresses;
-use Tobento\Service\User\AddressesInterface;
-use Tobento\Service\User\AddressFactoryInterface;
-use Tobento\Service\User\AddressInterface;
-use Tobento\Service\User\Address;
+use Tobento\Service\Country\Countries;
+use Tobento\Service\Country\CountriesInterface;
+use Tobento\Service\Country\Country;
+use Tobento\Service\Country\CountryInterface;
 
-$addresses = new Addresses(
-    null, // addressFactory: null|AddressFactoryInterface
-    // addresses: ...AddressInterface
-    new Address(key: 'shipping'),
-    new Address(key: 'payment'),
+$countries = new Countries(
+    new Country(code: 'US'), // CountryInterface
+    new Country(code: 'CH'),
 );
 
-var_dump($addresses instanceof AddressesInterface);
+var_dump($countries instanceof CountriesInterface);
 // bool(true)
 ```
 
-Check out [Addresses Interface](#addresses-interface) to learn more about the interface.
+Check out [Countries Interface](#countries-interface) to learn more about the interface.
 
-### Addresses Factory
+### Countries Factory
 
-Easily create an addresses object with the provided addresses factory:
+Easily create a Countries object with the provided countries factory:
 
-**createAddresses**
+**createCountries**
 
 ```php
-use Tobento\Service\User\AddressesFactory;
-use Tobento\Service\User\AddressesFactoryInterface;
-use Tobento\Service\User\AddressesInterface;
-use Tobento\Service\User\AddressFactoryInterface;
-use Tobento\Service\User\AddressInterface;
-use Tobento\Service\User\Address;
+use Tobento\Service\Country\CountriesFactory;
+use Tobento\Service\Country\CountriesFactoryInterface;
+use Tobento\Service\Country\CountryFactoryInterface;
+use Tobento\Service\Country\CountriesInterface;
+use Tobento\Service\Country\CountryInterface;
+use Tobento\Service\Country\Country;
 
-$addressesFactory = new AddressesFactory(
-    addressFactory: null, // null|AddressFactoryInterface
+$countriesFactory = new CountriesFactory(
+    countryFactory: null // null|CountryFactoryInterface
 );
 
-var_dump($addressesFactory instanceof AddressesFactoryInterface);
+var_dump($countriesFactory instanceof CountriesFactoryInterface);
 // bool(true)
 
-$addresses = $addressesFactory->createAddresses(
-    // addresses: ...AddressInterface
-    new Address(key: 'shipping'),
+$countries = $countriesFactory->createCountries(
+    new Country(code: 'US'), // CountryInterface
+    new Country(code: 'CH'),
 );
 
-var_dump($addresses instanceof AddressesInterface);
+var_dump($countries instanceof CountriesInterface);
 // bool(true)
 ```
 
-**createAddressesFromArray**
+Check out [Countries Interface](#countries-interface) to learn more about the interface.
+
+**createCountriesFromArray**
 
 ```php
-use Tobento\Service\User\AddressesFactory;
-use Tobento\Service\User\Address;
+use Tobento\Service\Country\CountriesFactory;
+use Tobento\Service\Country\CountriesInterface;
 
-$addresses = (new AddressesFactory())->createAddressesFromArray([
-    ['key' => 'payment'],
-    new Address(key: 'shipping'),
+$countriesFactory = new CountriesFactory();
+
+$countries = $countriesFactory->createCountriesFromArray([
+    ['code' => 'US'],
+    ['code' => 'CH'],
 ]);
-```
 
-### Addresses Interface
-
-```php
-use Tobento\Service\User\AddressesFactory;
-use Tobento\Service\User\AddressesInterface;
-
-$addresses = (new AddressesFactory())->createAddresses();
-
-var_dump($addresses instanceof AddressesInterface);
+var_dump($countries instanceof CountriesInterface);
 // bool(true)
 ```
 
-**addressFactory**
+Check out [Countries Interface](#countries-interface) to learn more about the interface.
+
+### Countries Interface
 
 ```php
-use Tobento\Service\User\AddressesFactory;
-use Tobento\Service\User\AddressFactoryInterface;
+use Tobento\Service\Country\CountryRepository;
+use Tobento\Service\Country\CountriesInterface;
 
-$addresses = (new AddressesFactory())->createAddresses();
+$countryRepository = new CountryRepository();
 
-var_dump($addresses->addressFactory() instanceof AddressFactoryInterface);
+$countries = $countryRepository->findCountries();
+
+var_dump($countries instanceof CountriesInterface);
+// bool(true)
+```
+
+**addCountry**
+
+Adds a country.
+
+```php
+use Tobento\Service\Country\CountriesFactory;
+use Tobento\Service\Country\CountryInterface;
+use Tobento\Service\Country\Country;
+
+$countries = (new CountriesFactory())->createCountries();
+
+$countries->addCountry(
+    country: new Country(code: 'US') // CountryInterface
+);
+```
+
+**addCountries**
+
+```php
+use Tobento\Service\Country\CountriesFactory;
+use Tobento\Service\Country\CountryInterface;
+use Tobento\Service\Country\Country;
+
+$countries = (new CountriesFactory())->createCountries();
+
+$countries->addCountries(
+    new Country(code: 'US'), // CountryInterface
+    new Country(code: 'CH'),
+);
+```
+
+**sort**
+
+Returns a new instance with the countries sorted.
+
+```php
+use Tobento\Service\Country\CountryRepository;
+use Tobento\Service\Country\CountryInterface;
+
+$countryRepository = new CountryRepository();
+
+$countries = $countryRepository->findCountries();
+
+// sorted by country name.
+$countries = $countries->sort();
+
+// sort by callback.
+$countries = $countries->sort(
+    fn(CountryInterface $a, CountryInterface $b): int
+        => $a->priority() <=> $b->priority()
+);
+```
+
+**filter**
+
+Returns a new instance with the filtered countries.
+
+```php
+use Tobento\Service\Country\CountryRepository;
+use Tobento\Service\Country\CountryInterface;
+
+$countryRepository = new CountryRepository();
+
+$countries = $countryRepository->findCountries();
+
+$countries = $countries->filter(
+    fn(CountryInterface $c): bool => in_array($c->locale(), ['de', 'en'])
+);
+```
+
+**code**
+
+Returns a new instance with the specified code filtered.
+
+```php
+use Tobento\Service\Country\CountryRepository;
+
+$countryRepository = new CountryRepository();
+
+$countries = $countryRepository->findCountries();
+
+$countries = $countries->code(code: 'US');
+```
+
+**locale**
+
+Returns a new instance with the specified locale filtered.
+
+```php
+use Tobento\Service\Country\CountryRepository;
+
+$countryRepository = new CountryRepository();
+
+$countries = $countryRepository->findCountries();
+
+$countries = $countries->locale(locale: 'de');
+```
+
+**group**
+
+Returns a new instance with the specified group filtered.
+
+```php
+use Tobento\Service\Country\CountryRepository;
+
+$countryRepository = new CountryRepository();
+
+$countries = $countryRepository->findCountries();
+
+$countries = $countries->group(group: 'shipping');
+```
+
+**region**
+
+Returns a new instance with the specified region filtered.
+
+```php
+use Tobento\Service\Country\CountryRepository;
+
+$countryRepository = new CountryRepository();
+
+$countries = $countryRepository->findCountries();
+
+$countries = $countries->region(region: 'nearBy');
+```
+
+**continent**
+
+Returns a new instance with the specified continent filtered.
+
+```php
+use Tobento\Service\Country\CountryRepository;
+
+$countryRepository = new CountryRepository();
+
+$countries = $countryRepository->findCountries();
+
+$countries = $countries->continent(continent: 'Europe');
+```
+
+**all**
+
+Returns all countries.
+
+```php
+use Tobento\Service\Country\CountryRepository;
+use Tobento\Service\Country\CountryInterface;
+
+$countryRepository = new CountryRepository();
+
+$countries = $countryRepository->findCountries();
+
+foreach($countries->all() as $country) {
+    var_dump($country instanceof CountryInterface);
+    // bool(true)
+}
+
+// or just
+foreach($countries as $country) {
+    var_dump($country instanceof CountryInterface);
+    // bool(true)
+}
+```
+
+**first**
+
+Returns the first country or null if none.
+
+```php
+use Tobento\Service\Country\CountryRepository;
+use Tobento\Service\Country\CountryInterface;
+
+$countryRepository = new CountryRepository();
+
+$countries = $countryRepository->findCountries();
+
+$country = $countries->first();
+
+var_dump($country instanceof CountryInterface);
 // bool(true)
 ```
 
 **get**
 
-The get method returns the address by the specified key. If the address does not exist yet, it will create and add it to the addresses.
+Returns the first country found by code, code3, numericCode and/or locale.
 
 ```php
-use Tobento\Service\User\AddressesFactory;
-use Tobento\Service\User\AddressInterface;
+use Tobento\Service\Country\CountryRepository;
+use Tobento\Service\Country\CountryInterface;
 
-$addresses = (new AddressesFactory())->createAddresses();
+$countryRepository = new CountryRepository();
 
-$address = $addresses->get(key: 'payment');
+$countries = $countryRepository->findCountries();
 
-var_dump($address instanceof AddressInterface);
+$country = $countries->get(code: 'US');
+
+var_dump($country instanceof CountryInterface);
+// bool(true)
+
+// and with locale
+$country = $countries->get(code: 'US', locale: 'en');
+
+var_dump($country instanceof CountryInterface);
 // bool(true)
 ```
 
-**add**
+**column**
+
+Returns the column of the countries.
 
 ```php
-use Tobento\Service\User\AddressesFactory;
+use Tobento\Service\Country\CountryRepository;
 
-$addresses = (new AddressesFactory())->createAddresses();
+$countryRepository = new CountryRepository();
 
-$address = $addresses->addressFactory()->createAddress(key: 'payment');
+$countries = $countryRepository->findCountries();
 
-$addresses->add($address);
+$column = $countries->column('name');
+
+var_dump($column);
+// array(249) { [0]=> string(11) "Afghanistan" ... }
+
+// indexed by country code 
+$column = $countries->column(column: 'name', index: 'code');
+
+var_dump($column);
+// { ["AF"]=> string(11) "Afghanistan" ... }
 ```
 
-**create**
+**groupedColumn**
 
-The create method creates an address with the specified parameters, but does it not add to the addresses.
-
-```php
-use Tobento\Service\User\AddressesFactory;
-use Tobento\Service\User\AddressInterface;
-
-$addresses = (new AddressesFactory())->createAddresses();
-
-$address = $addresses->create(['key' => 'payment']);
-
-var_dump($address instanceof AddressInterface);
-// bool(true)
-
-// you might add it to the addresses
-$addresses->add($address);
-```
-
-**address**
-
-The address method creates an address and adds it to the addresses.
+Returns the column of the countries grouped.
 
 ```php
-use Tobento\Service\User\AddressesFactory;
-use Tobento\Service\User\AddressInterface;
+use Tobento\Service\Country\CountryRepository;
 
-$addresses = (new AddressesFactory())->createAddresses();
+$countryRepository = new CountryRepository();
 
-$address = $addresses->address(['key' => 'payment']);
+$countries = $countryRepository->findCountries();
 
-var_dump($address instanceof AddressInterface);
-// bool(true)
-```
-
-**has**
-
-Check if an address exists.
-
-```php
-use Tobento\Service\User\AddressesFactory;
-
-$addresses = (new AddressesFactory())->createAddresses();
-
-var_dump($addresses->has(key: 'payment'));
-// bool(false)
-
-$addresses->address(['key' => 'payment', 'firstname' => 'John']);
-
-var_dump($addresses->has(key: 'payment'));
-// bool(true)
-
-// you might check for each address parameter
-var_dump($addresses->has(
-    key: 'payment',
-    with: ['firstname', 'lastname'],
-));
-// bool(false)
-
-var_dump($addresses->has(
-    key: 'payment',
-    with: ['firstname'],
-));
-// bool(true)
-```
-
-**delete**
-
-```php
-use Tobento\Service\User\AddressesFactory;
-
-$addresses = (new AddressesFactory())->createAddresses();
-
-$addresses->delete(key: 'payment');
-```
-
-**all**
-
-```php
-use Tobento\Service\User\AddressesFactory;
-use Tobento\Service\User\AddressInterface;
-
-$addresses = (new AddressesFactory())->createAddresses();
-
-$addresses->address(['key' => 'payment']);
-
-foreach($addresses->all() as $address) {
-    var_dump($address instanceof AddressInterface);
-    // bool(true)
-}
-
-// or just
-foreach($addresses as $address) {
-    var_dump($address instanceof AddressInterface);
-    // bool(true)
-}
-```
-
-**filter**
-
-You might filter addresses returning a new instance.
-
-```php
-use Tobento\Service\User\AddressesFactory;
-use Tobento\Service\User\AddressInterface;
-
-$addresses = (new AddressesFactory())->createAddresses();
-
-$addresses = $addresses->filter(
-    fn(AddressInterface $a): bool => $a->countryKey() === 'CH'
+$column = $countries->groupedColumn(
+    group: 'continent',
+    column: 'name',
+    index: 'code', // optional
 );
+
+print_r($column);
+/*Array
+(
+    [Asia] => Array
+        (
+            [AF] => Afghanistan
+            ...
+        )
+    [Europe] => Array
+        (
+            [AX] => Åland Islands
+            ...
+        )
+    ...
+)*/
 ```
 
-**group**
+**only**
 
-The group method filters addresses by the specified group.
+Returns a new instance with countries with only the codes specified.
 
 ```php
-use Tobento\Service\User\AddressesFactory;
+use Tobento\Service\Country\CountryRepository;
 
-$addresses = (new AddressesFactory())->createAddresses();
+$countryRepository = new CountryRepository();
 
-$addresses = $addresses->group('addressbook');
+$countries = $countryRepository->findCountries();
+
+$countries = $countries->only(['CH', 'US']);
 ```
 
-## Addressable
+**except**
+
+Returns a new instance with countries except the codes specified.
 
 ```php
-use Tobento\Service\User\User;
-use Tobento\Service\User\Addressable;
+use Tobento\Service\Country\CountryRepository;
 
-$user = new User(username: 'username');
+$countryRepository = new CountryRepository();
 
-var_dump($user instanceof Addressable);
-// bool(true)
+$countries = $countryRepository->findCountries();
+
+$countries = $countries->except(['CH', 'US']);
 ```
 
-**addresses**
+**map**
+
+Returns a new instance with the countries mapped.
 
 ```php
-use Tobento\Service\User\User;
-use Tobento\Service\User\AddressesInterface;
+use Tobento\Service\Country\CountryRepository;
+use Tobento\Service\Country\CountryInterface;
 
-$user = new User(username: 'username');
+$countryRepository = new CountryRepository();
 
-var_dump($user->addresses() instanceof AddressesInterface);
-// bool(true)
+$countries = $countryRepository->findCountries();
+
+$countries = $countries->map(function(CountryInterface $c): CountryInterface {
+    if (in_array($c->code(), ['CH', 'FR'])) {
+        return $c->withRegion('Near by')->withPriority(100);
+    }
+    return $c->withRegion('All Others');
+});
 ```
-
-Check out the [Addresses Interface](#addresses-interface) to learn more about the interface.
-
-**address**
-
-The address method returns the address if exists or creates a new address for the specified key.
-
-```php
-use Tobento\Service\User\User;
-use Tobento\Service\User\AddressInterface;
-
-$user = new User(username: 'username');
-
-// returns default address
-var_dump($user->address() instanceof AddressInterface);
-// bool(true)
-
-var_dump($user->address(key: 'payment') instanceof AddressInterface);
-// bool(true)
-```
-
-**hasAddress**
-
-```php
-use Tobento\Service\User\User;
-
-$user = new User(username: 'username');
-
-var_dump($user->hasAddress(key: 'payment'));
-// bool(false)
-
-// you might check for each address parameter
-var_dump($user->hasAddress(
-    key: 'payment',
-    with: ['firstname', 'lastname'],
-));
-// bool(false)
-```
-
 
 # Credits
 

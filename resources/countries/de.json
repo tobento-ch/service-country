@@ -1,0 +1,2243 @@
+{
+    "AF": {
+        "code": "AF",
+        "code3": "AFG",
+        "numericCode": "004",
+        "currencyKey": "AFN",
+        "locale": "de",
+        "name": "Afghanistan",
+        "continent": "Asien"
+    },
+    "AX": {
+        "code": "AX",
+        "code3": "ALA",
+        "numericCode": "248",
+        "currencyKey": "EUR",
+        "locale": "de",
+        "name": "Ålandinseln",
+        "continent": "Europa"
+    },
+    "AL": {
+        "code": "AL",
+        "code3": "ALB",
+        "numericCode": "008",
+        "currencyKey": "ALL",
+        "locale": "de",
+        "name": "Albanien",
+        "continent": "Europa"
+    },
+    "DZ": {
+        "code": "DZ",
+        "code3": "DZA",
+        "numericCode": "012",
+        "currencyKey": "DZD",
+        "locale": "de",
+        "name": "Algerien",
+        "continent": "Afrika"
+    },
+    "AS": {
+        "code": "AS",
+        "code3": "ASM",
+        "numericCode": "016",
+        "currencyKey": "USD",
+        "locale": "de",
+        "name": "Amerikanisch-Samoa",
+        "continent": "Ozeanien"
+    },
+    "AD": {
+        "code": "AD",
+        "code3": "AND",
+        "numericCode": "020",
+        "currencyKey": "EUR",
+        "locale": "de",
+        "name": "Andorra",
+        "continent": "Europa"
+    },
+    "AO": {
+        "code": "AO",
+        "code3": "AGO",
+        "numericCode": "024",
+        "currencyKey": "AOA",
+        "locale": "de",
+        "name": "Angola",
+        "continent": "Afrika"
+    },
+    "AI": {
+        "code": "AI",
+        "code3": "AIA",
+        "numericCode": "660",
+        "currencyKey": "XCD",
+        "locale": "de",
+        "name": "Anguilla",
+        "continent": "Nordamerika"
+    },
+    "AQ": {
+        "code": "AQ",
+        "code3": "ATA",
+        "numericCode": "010",
+        "currencyKey": "",
+        "locale": "de",
+        "name": "Antarktis",
+        "continent": "Antarktika"
+    },
+    "AG": {
+        "code": "AG",
+        "code3": "ATG",
+        "numericCode": "028",
+        "currencyKey": "XCD",
+        "locale": "de",
+        "name": "Antigua und Barbuda",
+        "continent": "Nordamerika"
+    },
+    "AR": {
+        "code": "AR",
+        "code3": "ARG",
+        "numericCode": "032",
+        "currencyKey": "ARS",
+        "locale": "de",
+        "name": "Argentinien",
+        "continent": "Südamerika"
+    },
+    "AM": {
+        "code": "AM",
+        "code3": "ARM",
+        "numericCode": "051",
+        "currencyKey": "AMD",
+        "locale": "de",
+        "name": "Armenien",
+        "continent": "Asien"
+    },
+    "AW": {
+        "code": "AW",
+        "code3": "ABW",
+        "numericCode": "533",
+        "currencyKey": "AWG",
+        "locale": "de",
+        "name": "Aruba",
+        "continent": "Nordamerika"
+    },
+    "AU": {
+        "code": "AU",
+        "code3": "AUS",
+        "numericCode": "036",
+        "currencyKey": "AUD",
+        "locale": "de",
+        "name": "Australien",
+        "continent": "Ozeanien"
+    },
+    "AT": {
+        "code": "AT",
+        "code3": "AUT",
+        "numericCode": "040",
+        "currencyKey": "EUR",
+        "locale": "de",
+        "name": "Österreich",
+        "continent": "Europa"
+    },
+    "AZ": {
+        "code": "AZ",
+        "code3": "AZE",
+        "numericCode": "031",
+        "currencyKey": "AZN",
+        "locale": "de",
+        "name": "Aserbaidschan",
+        "continent": "Asien"
+    },
+    "BS": {
+        "code": "BS",
+        "code3": "BHS",
+        "numericCode": "044",
+        "currencyKey": "BSD",
+        "locale": "de",
+        "name": "Bahamas",
+        "continent": "Nordamerika"
+    },
+    "BH": {
+        "code": "BH",
+        "code3": "BHR",
+        "numericCode": "048",
+        "currencyKey": "BHD",
+        "locale": "de",
+        "name": "Bahrain",
+        "continent": "Asien"
+    },
+    "BD": {
+        "code": "BD",
+        "code3": "BGD",
+        "numericCode": "050",
+        "currencyKey": "BDT",
+        "locale": "de",
+        "name": "Bangladesch",
+        "continent": "Asien"
+    },
+    "BB": {
+        "code": "BB",
+        "code3": "BRB",
+        "numericCode": "052",
+        "currencyKey": "BBD",
+        "locale": "de",
+        "name": "Barbados",
+        "continent": "Nordamerika"
+    },
+    "BY": {
+        "code": "BY",
+        "code3": "BLR",
+        "numericCode": "112",
+        "currencyKey": "BYN",
+        "locale": "de",
+        "name": "Belarus",
+        "continent": "Europa"
+    },
+    "BE": {
+        "code": "BE",
+        "code3": "BEL",
+        "numericCode": "056",
+        "currencyKey": "EUR",
+        "locale": "de",
+        "name": "Belgien",
+        "continent": "Europa"
+    },
+    "BZ": {
+        "code": "BZ",
+        "code3": "BLZ",
+        "numericCode": "084",
+        "currencyKey": "BZD",
+        "locale": "de",
+        "name": "Belize",
+        "continent": "Nordamerika"
+    },
+    "BJ": {
+        "code": "BJ",
+        "code3": "BEN",
+        "numericCode": "204",
+        "currencyKey": "XOF",
+        "locale": "de",
+        "name": "Benin",
+        "continent": "Afrika"
+    },
+    "BM": {
+        "code": "BM",
+        "code3": "BMU",
+        "numericCode": "060",
+        "currencyKey": "BMD",
+        "locale": "de",
+        "name": "Bermuda",
+        "continent": "Nordamerika"
+    },
+    "BT": {
+        "code": "BT",
+        "code3": "BTN",
+        "numericCode": "064",
+        "currencyKey": "BTN",
+        "locale": "de",
+        "name": "Bhutan",
+        "continent": "Asien"
+    },
+    "BO": {
+        "code": "BO",
+        "code3": "BOL",
+        "numericCode": "068",
+        "currencyKey": "BOB",
+        "locale": "de",
+        "name": "Bolivien",
+        "continent": "Südamerika"
+    },
+    "BQ": {
+        "code": "BQ",
+        "code3": "BES",
+        "numericCode": "535",
+        "currencyKey": "USD",
+        "locale": "de",
+        "name": "Karibische Niederlande",
+        "continent": "Nordamerika"
+    },
+    "BA": {
+        "code": "BA",
+        "code3": "BIH",
+        "numericCode": "070",
+        "currencyKey": "BAM",
+        "locale": "de",
+        "name": "Bosnien und Herzegowina",
+        "continent": "Europa"
+    },
+    "BW": {
+        "code": "BW",
+        "code3": "BWA",
+        "numericCode": "072",
+        "currencyKey": "BWP",
+        "locale": "de",
+        "name": "Botsuana",
+        "continent": "Afrika"
+    },
+    "BV": {
+        "code": "BV",
+        "code3": "BVT",
+        "numericCode": "074",
+        "currencyKey": "NOK",
+        "locale": "de",
+        "name": "Bouvetinsel",
+        "continent": "Antarktika"
+    },
+    "BR": {
+        "code": "BR",
+        "code3": "BRA",
+        "numericCode": "076",
+        "currencyKey": "BRL",
+        "locale": "de",
+        "name": "Brasilien",
+        "continent": "Südamerika"
+    },
+    "IO": {
+        "code": "IO",
+        "code3": "IOT",
+        "numericCode": "086",
+        "currencyKey": "USD",
+        "locale": "de",
+        "name": "Britisches Territorium im Indischen Ozean",
+        "continent": "Asien"
+    },
+    "BN": {
+        "code": "BN",
+        "code3": "BRN",
+        "numericCode": "096",
+        "currencyKey": "BND",
+        "locale": "de",
+        "name": "Brunei Darussalam",
+        "continent": "Asien"
+    },
+    "BG": {
+        "code": "BG",
+        "code3": "BGR",
+        "numericCode": "100",
+        "currencyKey": "BGN",
+        "locale": "de",
+        "name": "Bulgarien",
+        "continent": "Europa"
+    },
+    "BF": {
+        "code": "BF",
+        "code3": "BFA",
+        "numericCode": "854",
+        "currencyKey": "XOF",
+        "locale": "de",
+        "name": "Burkina Faso",
+        "continent": "Afrika"
+    },
+    "BI": {
+        "code": "BI",
+        "code3": "BDI",
+        "numericCode": "108",
+        "currencyKey": "BIF",
+        "locale": "de",
+        "name": "Burundi",
+        "continent": "Afrika"
+    },
+    "KH": {
+        "code": "KH",
+        "code3": "KHM",
+        "numericCode": "116",
+        "currencyKey": "KHR",
+        "locale": "de",
+        "name": "Kambodscha",
+        "continent": "Asien"
+    },
+    "CM": {
+        "code": "CM",
+        "code3": "CMR",
+        "numericCode": "120",
+        "currencyKey": "XAF",
+        "locale": "de",
+        "name": "Kamerun",
+        "continent": "Afrika"
+    },
+    "CA": {
+        "code": "CA",
+        "code3": "CAN",
+        "numericCode": "124",
+        "currencyKey": "CAD",
+        "locale": "de",
+        "name": "Kanada",
+        "continent": "Nordamerika"
+    },
+    "CV": {
+        "code": "CV",
+        "code3": "CPV",
+        "numericCode": "132",
+        "currencyKey": "CVE",
+        "locale": "de",
+        "name": "Cabo Verde",
+        "continent": "Afrika"
+    },
+    "KY": {
+        "code": "KY",
+        "code3": "CYM",
+        "numericCode": "136",
+        "currencyKey": "KYD",
+        "locale": "de",
+        "name": "Kaimaninseln",
+        "continent": "Nordamerika"
+    },
+    "CF": {
+        "code": "CF",
+        "code3": "CAF",
+        "numericCode": "140",
+        "currencyKey": "XAF",
+        "locale": "de",
+        "name": "Zentralafrikanische Republik",
+        "continent": "Afrika"
+    },
+    "TD": {
+        "code": "TD",
+        "code3": "TCD",
+        "numericCode": "148",
+        "currencyKey": "XAF",
+        "locale": "de",
+        "name": "Tschad",
+        "continent": "Afrika"
+    },
+    "CL": {
+        "code": "CL",
+        "code3": "CHL",
+        "numericCode": "152",
+        "currencyKey": "CLP",
+        "locale": "de",
+        "name": "Chile",
+        "continent": "Südamerika"
+    },
+    "CN": {
+        "code": "CN",
+        "code3": "CHN",
+        "numericCode": "156",
+        "currencyKey": "CNY",
+        "locale": "de",
+        "name": "China",
+        "continent": "Asien"
+    },
+    "CX": {
+        "code": "CX",
+        "code3": "CXR",
+        "numericCode": "162",
+        "currencyKey": "AUD",
+        "locale": "de",
+        "name": "Weihnachtsinsel",
+        "continent": "Asien"
+    },
+    "CC": {
+        "code": "CC",
+        "code3": "CCK",
+        "numericCode": "166",
+        "currencyKey": "AUD",
+        "locale": "de",
+        "name": "Kokosinseln",
+        "continent": "Asien"
+    },
+    "CO": {
+        "code": "CO",
+        "code3": "COL",
+        "numericCode": "170",
+        "currencyKey": "COP",
+        "locale": "de",
+        "name": "Kolumbien",
+        "continent": "Südamerika"
+    },
+    "KM": {
+        "code": "KM",
+        "code3": "COM",
+        "numericCode": "174",
+        "currencyKey": "KMF",
+        "locale": "de",
+        "name": "Komoren",
+        "continent": "Afrika"
+    },
+    "CG": {
+        "code": "CG",
+        "code3": "COG",
+        "numericCode": "178",
+        "currencyKey": "XAF",
+        "locale": "de",
+        "name": "Kongo-Brazzaville",
+        "continent": "Afrika"
+    },
+    "CD": {
+        "code": "CD",
+        "code3": "COD",
+        "numericCode": "180",
+        "currencyKey": "CDF",
+        "locale": "de",
+        "name": "Kongo-Kinshasa",
+        "continent": "Afrika"
+    },
+    "CK": {
+        "code": "CK",
+        "code3": "COK",
+        "numericCode": "184",
+        "currencyKey": "NZD",
+        "locale": "de",
+        "name": "Cookinseln",
+        "continent": "Ozeanien"
+    },
+    "CR": {
+        "code": "CR",
+        "code3": "CRI",
+        "numericCode": "188",
+        "currencyKey": "CRC",
+        "locale": "de",
+        "name": "Costa Rica",
+        "continent": "Nordamerika"
+    },
+    "CI": {
+        "code": "CI",
+        "code3": "CIV",
+        "numericCode": "384",
+        "currencyKey": "XOF",
+        "locale": "de",
+        "name": "Côte d’Ivoire",
+        "continent": "Afrika"
+    },
+    "CW": {
+        "code": "CW",
+        "code3": "CUW",
+        "numericCode": "531",
+        "currencyKey": "ANG",
+        "locale": "de",
+        "name": "Curaçao",
+        "continent": "Nordamerika"
+    },
+    "HR": {
+        "code": "HR",
+        "code3": "HRV",
+        "numericCode": "191",
+        "currencyKey": "HRK",
+        "locale": "de",
+        "name": "Kroatien",
+        "continent": "Europa"
+    },
+    "CU": {
+        "code": "CU",
+        "code3": "CUB",
+        "numericCode": "192",
+        "currencyKey": "CUC",
+        "locale": "de",
+        "name": "Kuba",
+        "continent": "Nordamerika"
+    },
+    "CY": {
+        "code": "CY",
+        "code3": "CYP",
+        "numericCode": "196",
+        "currencyKey": "EUR",
+        "locale": "de",
+        "name": "Zypern",
+        "continent": "Asien"
+    },
+    "CZ": {
+        "code": "CZ",
+        "code3": "CZE",
+        "numericCode": "203",
+        "currencyKey": "CZK",
+        "locale": "de",
+        "name": "Tschechien",
+        "continent": "Europa"
+    },
+    "DK": {
+        "code": "DK",
+        "code3": "DNK",
+        "numericCode": "208",
+        "currencyKey": "DKK",
+        "locale": "de",
+        "name": "Dänemark",
+        "continent": "Europa"
+    },
+    "DJ": {
+        "code": "DJ",
+        "code3": "DJI",
+        "numericCode": "262",
+        "currencyKey": "DJF",
+        "locale": "de",
+        "name": "Dschibuti",
+        "continent": "Afrika"
+    },
+    "DM": {
+        "code": "DM",
+        "code3": "DMA",
+        "numericCode": "212",
+        "currencyKey": "XCD",
+        "locale": "de",
+        "name": "Dominica",
+        "continent": "Nordamerika"
+    },
+    "DO": {
+        "code": "DO",
+        "code3": "DOM",
+        "numericCode": "214",
+        "currencyKey": "DOP",
+        "locale": "de",
+        "name": "Dominikanische Republik",
+        "continent": "Nordamerika"
+    },
+    "EC": {
+        "code": "EC",
+        "code3": "ECU",
+        "numericCode": "218",
+        "currencyKey": "USD",
+        "locale": "de",
+        "name": "Ecuador",
+        "continent": "Südamerika"
+    },
+    "EG": {
+        "code": "EG",
+        "code3": "EGY",
+        "numericCode": "818",
+        "currencyKey": "EGP",
+        "locale": "de",
+        "name": "Ägypten",
+        "continent": "Afrika"
+    },
+    "SV": {
+        "code": "SV",
+        "code3": "SLV",
+        "numericCode": "222",
+        "currencyKey": "USD",
+        "locale": "de",
+        "name": "El Salvador",
+        "continent": "Nordamerika"
+    },
+    "GQ": {
+        "code": "GQ",
+        "code3": "GNQ",
+        "numericCode": "226",
+        "currencyKey": "XAF",
+        "locale": "de",
+        "name": "Äquatorialguinea",
+        "continent": "Afrika"
+    },
+    "ER": {
+        "code": "ER",
+        "code3": "ERI",
+        "numericCode": "232",
+        "currencyKey": "ERN",
+        "locale": "de",
+        "name": "Eritrea",
+        "continent": "Afrika"
+    },
+    "EE": {
+        "code": "EE",
+        "code3": "EST",
+        "numericCode": "233",
+        "currencyKey": "EUR",
+        "locale": "de",
+        "name": "Estland",
+        "continent": "Europa"
+    },
+    "ET": {
+        "code": "ET",
+        "code3": "ETH",
+        "numericCode": "231",
+        "currencyKey": "ETB",
+        "locale": "de",
+        "name": "Äthiopien",
+        "continent": "Afrika"
+    },
+    "FK": {
+        "code": "FK",
+        "code3": "FLK",
+        "numericCode": "238",
+        "currencyKey": "FKP",
+        "locale": "de",
+        "name": "Falklandinseln",
+        "continent": "Südamerika"
+    },
+    "FO": {
+        "code": "FO",
+        "code3": "FRO",
+        "numericCode": "234",
+        "currencyKey": "DKK",
+        "locale": "de",
+        "name": "Färöer",
+        "continent": "Europa"
+    },
+    "FJ": {
+        "code": "FJ",
+        "code3": "FJI",
+        "numericCode": "243",
+        "currencyKey": "FJD",
+        "locale": "de",
+        "name": "Fidschi",
+        "continent": "Ozeanien"
+    },
+    "FI": {
+        "code": "FI",
+        "code3": "FIN",
+        "numericCode": "246",
+        "currencyKey": "EUR",
+        "locale": "de",
+        "name": "Finnland",
+        "continent": "Europa"
+    },
+    "FR": {
+        "code": "FR",
+        "code3": "FRA",
+        "numericCode": "250",
+        "currencyKey": "EUR",
+        "locale": "de",
+        "name": "Frankreich",
+        "continent": "Europa"
+    },
+    "GF": {
+        "code": "GF",
+        "code3": "GUF",
+        "numericCode": "254",
+        "currencyKey": "EUR",
+        "locale": "de",
+        "name": "Französisch-Guayana",
+        "continent": "Südamerika"
+    },
+    "PF": {
+        "code": "PF",
+        "code3": "PYF",
+        "numericCode": "258",
+        "currencyKey": "XPF",
+        "locale": "de",
+        "name": "Französisch-Polynesien",
+        "continent": "Ozeanien"
+    },
+    "TF": {
+        "code": "TF",
+        "code3": "ATF",
+        "numericCode": "260",
+        "currencyKey": "EUR",
+        "locale": "de",
+        "name": "Französische Süd- und Antarktisgebiete",
+        "continent": "Antarktika"
+    },
+    "GA": {
+        "code": "GA",
+        "code3": "GAB",
+        "numericCode": "266",
+        "currencyKey": "XAF",
+        "locale": "de",
+        "name": "Gabun",
+        "continent": "Afrika"
+    },
+    "GM": {
+        "code": "GM",
+        "code3": "GMB",
+        "numericCode": "270",
+        "currencyKey": "GMD",
+        "locale": "de",
+        "name": "Gambia",
+        "continent": "Afrika"
+    },
+    "GE": {
+        "code": "GE",
+        "code3": "GEO",
+        "numericCode": "268",
+        "currencyKey": "GEL",
+        "locale": "de",
+        "name": "Georgien",
+        "continent": "Asien"
+    },
+    "DE": {
+        "code": "DE",
+        "code3": "DEU",
+        "numericCode": "276",
+        "currencyKey": "EUR",
+        "locale": "de",
+        "name": "Deutschland",
+        "continent": "Europa"
+    },
+    "GH": {
+        "code": "GH",
+        "code3": "GHA",
+        "numericCode": "288",
+        "currencyKey": "GHS",
+        "locale": "de",
+        "name": "Ghana",
+        "continent": "Afrika"
+    },
+    "GI": {
+        "code": "GI",
+        "code3": "GIB",
+        "numericCode": "292",
+        "currencyKey": "GIP",
+        "locale": "de",
+        "name": "Gibraltar",
+        "continent": "Europa"
+    },
+    "GR": {
+        "code": "GR",
+        "code3": "GRC",
+        "numericCode": "300",
+        "currencyKey": "EUR",
+        "locale": "de",
+        "name": "Griechenland",
+        "continent": "Europa"
+    },
+    "GL": {
+        "code": "GL",
+        "code3": "GRL",
+        "numericCode": "304",
+        "currencyKey": "DKK",
+        "locale": "de",
+        "name": "Grönland",
+        "continent": "Nordamerika"
+    },
+    "GD": {
+        "code": "GD",
+        "code3": "GRD",
+        "numericCode": "308",
+        "currencyKey": "XCD",
+        "locale": "de",
+        "name": "Grenada",
+        "continent": "Nordamerika"
+    },
+    "GP": {
+        "code": "GP",
+        "code3": "GLP",
+        "numericCode": "312",
+        "currencyKey": "EUR",
+        "locale": "de",
+        "name": "Guadeloupe",
+        "continent": "Nordamerika"
+    },
+    "GU": {
+        "code": "GU",
+        "code3": "GUM",
+        "numericCode": "316",
+        "currencyKey": "USD",
+        "locale": "de",
+        "name": "Guam",
+        "continent": "Ozeanien"
+    },
+    "GT": {
+        "code": "GT",
+        "code3": "GTM",
+        "numericCode": "320",
+        "currencyKey": "GTQ",
+        "locale": "de",
+        "name": "Guatemala",
+        "continent": "Nordamerika"
+    },
+    "GG": {
+        "code": "GG",
+        "code3": "GGY",
+        "numericCode": "831",
+        "currencyKey": "GBP",
+        "locale": "de",
+        "name": "Guernsey",
+        "continent": "Europa"
+    },
+    "GN": {
+        "code": "GN",
+        "code3": "GIN",
+        "numericCode": "324",
+        "currencyKey": "GNF",
+        "locale": "de",
+        "name": "Guinea",
+        "continent": "Afrika"
+    },
+    "GW": {
+        "code": "GW",
+        "code3": "GNB",
+        "numericCode": "624",
+        "currencyKey": "XOF",
+        "locale": "de",
+        "name": "Guinea-Bissau",
+        "continent": "Afrika"
+    },
+    "GY": {
+        "code": "GY",
+        "code3": "GUY",
+        "numericCode": "328",
+        "currencyKey": "GYD",
+        "locale": "de",
+        "name": "Guyana",
+        "continent": "Südamerika"
+    },
+    "HT": {
+        "code": "HT",
+        "code3": "HTI",
+        "numericCode": "332",
+        "currencyKey": "USD",
+        "locale": "de",
+        "name": "Haiti",
+        "continent": "Nordamerika"
+    },
+    "HM": {
+        "code": "HM",
+        "code3": "HMD",
+        "numericCode": "334",
+        "currencyKey": "AUD",
+        "locale": "de",
+        "name": "Heard und McDonaldinseln",
+        "continent": "Antarktika"
+    },
+    "VA": {
+        "code": "VA",
+        "code3": "VAT",
+        "numericCode": "336",
+        "currencyKey": "EUR",
+        "locale": "de",
+        "name": "Vatikanstadt",
+        "continent": "Europa"
+    },
+    "HN": {
+        "code": "HN",
+        "code3": "HND",
+        "numericCode": "340",
+        "currencyKey": "HNL",
+        "locale": "de",
+        "name": "Honduras",
+        "continent": "Nordamerika"
+    },
+    "HK": {
+        "code": "HK",
+        "code3": "HKG",
+        "numericCode": "344",
+        "currencyKey": "HKD",
+        "locale": "de",
+        "name": "Sonderverwaltungsregion Hongkong",
+        "continent": "Asien"
+    },
+    "HU": {
+        "code": "HU",
+        "code3": "HUN",
+        "numericCode": "348",
+        "currencyKey": "HUF",
+        "locale": "de",
+        "name": "Ungarn",
+        "continent": "Europa"
+    },
+    "IS": {
+        "code": "IS",
+        "code3": "ISL",
+        "numericCode": "352",
+        "currencyKey": "ISK",
+        "locale": "de",
+        "name": "Island",
+        "continent": "Europa"
+    },
+    "IN": {
+        "code": "IN",
+        "code3": "IND",
+        "numericCode": "356",
+        "currencyKey": "INR",
+        "locale": "de",
+        "name": "Indien",
+        "continent": "Asien"
+    },
+    "ID": {
+        "code": "ID",
+        "code3": "IDN",
+        "numericCode": "360",
+        "currencyKey": "IDR",
+        "locale": "de",
+        "name": "Indonesien",
+        "continent": "Asien"
+    },
+    "IR": {
+        "code": "IR",
+        "code3": "IRN",
+        "numericCode": "364",
+        "currencyKey": "IRR",
+        "locale": "de",
+        "name": "Iran",
+        "continent": "Asien"
+    },
+    "IQ": {
+        "code": "IQ",
+        "code3": "IRQ",
+        "numericCode": "368",
+        "currencyKey": "IQD",
+        "locale": "de",
+        "name": "Irak",
+        "continent": "Asien"
+    },
+    "IE": {
+        "code": "IE",
+        "code3": "IRL",
+        "numericCode": "372",
+        "currencyKey": "EUR",
+        "locale": "de",
+        "name": "Irland",
+        "continent": "Europa"
+    },
+    "IM": {
+        "code": "IM",
+        "code3": "IMN",
+        "numericCode": "833",
+        "currencyKey": "GBP",
+        "locale": "de",
+        "name": "Isle of Man",
+        "continent": "Europa"
+    },
+    "IL": {
+        "code": "IL",
+        "code3": "ISR",
+        "numericCode": "376",
+        "currencyKey": "ILS",
+        "locale": "de",
+        "name": "Israel",
+        "continent": "Asien"
+    },
+    "IT": {
+        "code": "IT",
+        "code3": "ITA",
+        "numericCode": "380",
+        "currencyKey": "EUR",
+        "locale": "de",
+        "name": "Italien",
+        "continent": "Europa"
+    },
+    "JM": {
+        "code": "JM",
+        "code3": "JAM",
+        "numericCode": "388",
+        "currencyKey": "JMD",
+        "locale": "de",
+        "name": "Jamaika",
+        "continent": "Nordamerika"
+    },
+    "JP": {
+        "code": "JP",
+        "code3": "JPN",
+        "numericCode": "392",
+        "currencyKey": "JPY",
+        "locale": "de",
+        "name": "Japan",
+        "continent": "Asien"
+    },
+    "JE": {
+        "code": "JE",
+        "code3": "JEY",
+        "numericCode": "832",
+        "currencyKey": "GBP",
+        "locale": "de",
+        "name": "Jersey",
+        "continent": "Europa"
+    },
+    "JO": {
+        "code": "JO",
+        "code3": "JOR",
+        "numericCode": "400",
+        "currencyKey": "JOD",
+        "locale": "de",
+        "name": "Jordanien",
+        "continent": "Asien"
+    },
+    "KZ": {
+        "code": "KZ",
+        "code3": "KAZ",
+        "numericCode": "398",
+        "currencyKey": "KZT",
+        "locale": "de",
+        "name": "Kasachstan",
+        "continent": "Asien"
+    },
+    "KE": {
+        "code": "KE",
+        "code3": "KEN",
+        "numericCode": "404",
+        "currencyKey": "KES",
+        "locale": "de",
+        "name": "Kenia",
+        "continent": "Afrika"
+    },
+    "KI": {
+        "code": "KI",
+        "code3": "KIR",
+        "numericCode": "296",
+        "currencyKey": "AUD",
+        "locale": "de",
+        "name": "Kiribati",
+        "continent": "Ozeanien"
+    },
+    "KP": {
+        "code": "KP",
+        "code3": "PRK",
+        "numericCode": "408",
+        "currencyKey": "KPW",
+        "locale": "de",
+        "name": "Nordkorea",
+        "continent": "Asien"
+    },
+    "KR": {
+        "code": "KR",
+        "code3": "KOR",
+        "numericCode": "410",
+        "currencyKey": "KRW",
+        "locale": "de",
+        "name": "Südkorea",
+        "continent": "Asien"
+    },
+    "KW": {
+        "code": "KW",
+        "code3": "KWT",
+        "numericCode": "414",
+        "currencyKey": "KWD",
+        "locale": "de",
+        "name": "Kuwait",
+        "continent": "Asien"
+    },
+    "KG": {
+        "code": "KG",
+        "code3": "KGZ",
+        "numericCode": "417",
+        "currencyKey": "KGS",
+        "locale": "de",
+        "name": "Kirgisistan",
+        "continent": "Asien"
+    },
+    "LA": {
+        "code": "LA",
+        "code3": "LAO",
+        "numericCode": "418",
+        "currencyKey": "LAK",
+        "locale": "de",
+        "name": "Laos",
+        "continent": "Asien"
+    },
+    "LV": {
+        "code": "LV",
+        "code3": "LVA",
+        "numericCode": "428",
+        "currencyKey": "EUR",
+        "locale": "de",
+        "name": "Lettland",
+        "continent": "Europa"
+    },
+    "LB": {
+        "code": "LB",
+        "code3": "LBN",
+        "numericCode": "422",
+        "currencyKey": "LBP",
+        "locale": "de",
+        "name": "Libanon",
+        "continent": "Asien"
+    },
+    "LS": {
+        "code": "LS",
+        "code3": "LSO",
+        "numericCode": "426",
+        "currencyKey": "LSL",
+        "locale": "de",
+        "name": "Lesotho",
+        "continent": "Afrika"
+    },
+    "LR": {
+        "code": "LR",
+        "code3": "LBR",
+        "numericCode": "430",
+        "currencyKey": "LRD",
+        "locale": "de",
+        "name": "Liberia",
+        "continent": "Afrika"
+    },
+    "LY": {
+        "code": "LY",
+        "code3": "LBY",
+        "numericCode": "434",
+        "currencyKey": "LYD",
+        "locale": "de",
+        "name": "Libyen",
+        "continent": "Afrika"
+    },
+    "LI": {
+        "code": "LI",
+        "code3": "LIE",
+        "numericCode": "438",
+        "currencyKey": "CHF",
+        "locale": "de",
+        "name": "Liechtenstein",
+        "continent": "Europa"
+    },
+    "LT": {
+        "code": "LT",
+        "code3": "LTU",
+        "numericCode": "440",
+        "currencyKey": "EUR",
+        "locale": "de",
+        "name": "Litauen",
+        "continent": "Europa"
+    },
+    "LU": {
+        "code": "LU",
+        "code3": "LUX",
+        "numericCode": "442",
+        "currencyKey": "EUR",
+        "locale": "de",
+        "name": "Luxemburg",
+        "continent": "Europa"
+    },
+    "MO": {
+        "code": "MO",
+        "code3": "MAC",
+        "numericCode": "446",
+        "currencyKey": "MOP",
+        "locale": "de",
+        "name": "Sonderverwaltungsregion Macau",
+        "continent": "Asien"
+    },
+    "MK": {
+        "code": "MK",
+        "code3": "MKD",
+        "numericCode": "807",
+        "currencyKey": "MKD",
+        "locale": "de",
+        "name": "Nordmazedonien",
+        "continent": "Europa"
+    },
+    "MG": {
+        "code": "MG",
+        "code3": "MDG",
+        "numericCode": "450",
+        "currencyKey": "MGA",
+        "locale": "de",
+        "name": "Madagaskar",
+        "continent": "Afrika"
+    },
+    "MW": {
+        "code": "MW",
+        "code3": "MWI",
+        "numericCode": "454",
+        "currencyKey": "MWK",
+        "locale": "de",
+        "name": "Malawi",
+        "continent": "Afrika"
+    },
+    "MY": {
+        "code": "MY",
+        "code3": "MYS",
+        "numericCode": "458",
+        "currencyKey": "MYR",
+        "locale": "de",
+        "name": "Malaysia",
+        "continent": "Asien"
+    },
+    "MV": {
+        "code": "MV",
+        "code3": "MDV",
+        "numericCode": "462",
+        "currencyKey": "MVR",
+        "locale": "de",
+        "name": "Malediven",
+        "continent": "Asien"
+    },
+    "ML": {
+        "code": "ML",
+        "code3": "MLI",
+        "numericCode": "466",
+        "currencyKey": "XOF",
+        "locale": "de",
+        "name": "Mali",
+        "continent": "Afrika"
+    },
+    "MT": {
+        "code": "MT",
+        "code3": "MLT",
+        "numericCode": "470",
+        "currencyKey": "EUR",
+        "locale": "de",
+        "name": "Malta",
+        "continent": "Europa"
+    },
+    "MH": {
+        "code": "MH",
+        "code3": "MHL",
+        "numericCode": "584",
+        "currencyKey": "USD",
+        "locale": "de",
+        "name": "Marshallinseln",
+        "continent": "Ozeanien"
+    },
+    "MQ": {
+        "code": "MQ",
+        "code3": "MTQ",
+        "numericCode": "474",
+        "currencyKey": "EUR",
+        "locale": "de",
+        "name": "Martinique",
+        "continent": "Nordamerika"
+    },
+    "MR": {
+        "code": "MR",
+        "code3": "MRT",
+        "numericCode": "478",
+        "currencyKey": "MRU",
+        "locale": "de",
+        "name": "Mauretanien",
+        "continent": "Afrika"
+    },
+    "MU": {
+        "code": "MU",
+        "code3": "MUS",
+        "numericCode": "480",
+        "currencyKey": "MUR",
+        "locale": "de",
+        "name": "Mauritius",
+        "continent": "Afrika"
+    },
+    "YT": {
+        "code": "YT",
+        "code3": "MYT",
+        "numericCode": "175",
+        "currencyKey": "EUR",
+        "locale": "de",
+        "name": "Mayotte",
+        "continent": "Afrika"
+    },
+    "MX": {
+        "code": "MX",
+        "code3": "MEX",
+        "numericCode": "484",
+        "currencyKey": "MXN",
+        "locale": "de",
+        "name": "Mexiko",
+        "continent": "Nordamerika"
+    },
+    "FM": {
+        "code": "FM",
+        "code3": "FSM",
+        "numericCode": "583",
+        "currencyKey": "USD",
+        "locale": "de",
+        "name": "Mikronesien",
+        "continent": "Ozeanien"
+    },
+    "MD": {
+        "code": "MD",
+        "code3": "MDA",
+        "numericCode": "498",
+        "currencyKey": "MDL",
+        "locale": "de",
+        "name": "Republik Moldau",
+        "continent": "Europa"
+    },
+    "MC": {
+        "code": "MC",
+        "code3": "MCO",
+        "numericCode": "492",
+        "currencyKey": "EUR",
+        "locale": "de",
+        "name": "Monaco",
+        "continent": "Europa"
+    },
+    "MN": {
+        "code": "MN",
+        "code3": "MNG",
+        "numericCode": "496",
+        "currencyKey": "MNT",
+        "locale": "de",
+        "name": "Mongolei",
+        "continent": "Asien"
+    },
+    "ME": {
+        "code": "ME",
+        "code3": "MNE",
+        "numericCode": "499",
+        "currencyKey": "EUR",
+        "locale": "de",
+        "name": "Montenegro",
+        "continent": "Europa"
+    },
+    "MS": {
+        "code": "MS",
+        "code3": "MSR",
+        "numericCode": "500",
+        "currencyKey": "XCD",
+        "locale": "de",
+        "name": "Montserrat",
+        "continent": "Nordamerika"
+    },
+    "MA": {
+        "code": "MA",
+        "code3": "MAR",
+        "numericCode": "504",
+        "currencyKey": "MAD",
+        "locale": "de",
+        "name": "Marokko",
+        "continent": "Afrika"
+    },
+    "MZ": {
+        "code": "MZ",
+        "code3": "MOZ",
+        "numericCode": "508",
+        "currencyKey": "MZN",
+        "locale": "de",
+        "name": "Mosambik",
+        "continent": "Afrika"
+    },
+    "MM": {
+        "code": "MM",
+        "code3": "MMR",
+        "numericCode": "104",
+        "currencyKey": "MMK",
+        "locale": "de",
+        "name": "Myanmar",
+        "continent": "Asien"
+    },
+    "NA": {
+        "code": "NA",
+        "code3": "NAM",
+        "numericCode": "516",
+        "currencyKey": "NAD",
+        "locale": "de",
+        "name": "Namibia",
+        "continent": "Afrika"
+    },
+    "NR": {
+        "code": "NR",
+        "code3": "NRU",
+        "numericCode": "520",
+        "currencyKey": "AUD",
+        "locale": "de",
+        "name": "Nauru",
+        "continent": "Ozeanien"
+    },
+    "NP": {
+        "code": "NP",
+        "code3": "NPL",
+        "numericCode": "524",
+        "currencyKey": "NPR",
+        "locale": "de",
+        "name": "Nepal",
+        "continent": "Asien"
+    },
+    "NL": {
+        "code": "NL",
+        "code3": "NLD",
+        "numericCode": "528",
+        "currencyKey": "EUR",
+        "locale": "de",
+        "name": "Niederlande",
+        "continent": "Europa"
+    },
+    "NC": {
+        "code": "NC",
+        "code3": "NCL",
+        "numericCode": "540",
+        "currencyKey": "XPF",
+        "locale": "de",
+        "name": "Neukaledonien",
+        "continent": "Ozeanien"
+    },
+    "NZ": {
+        "code": "NZ",
+        "code3": "NZL",
+        "numericCode": "554",
+        "currencyKey": "NZD",
+        "locale": "de",
+        "name": "Neuseeland",
+        "continent": "Ozeanien"
+    },
+    "NI": {
+        "code": "NI",
+        "code3": "NIC",
+        "numericCode": "558",
+        "currencyKey": "NIO",
+        "locale": "de",
+        "name": "Nicaragua",
+        "continent": "Nordamerika"
+    },
+    "NE": {
+        "code": "NE",
+        "code3": "NER",
+        "numericCode": "562",
+        "currencyKey": "XOF",
+        "locale": "de",
+        "name": "Niger",
+        "continent": "Afrika"
+    },
+    "NG": {
+        "code": "NG",
+        "code3": "NGA",
+        "numericCode": "566",
+        "currencyKey": "NGN",
+        "locale": "de",
+        "name": "Nigeria",
+        "continent": "Afrika"
+    },
+    "NU": {
+        "code": "NU",
+        "code3": "NIU",
+        "numericCode": "570",
+        "currencyKey": "NZD",
+        "locale": "de",
+        "name": "Niue",
+        "continent": "Ozeanien"
+    },
+    "NF": {
+        "code": "NF",
+        "code3": "NFK",
+        "numericCode": "574",
+        "currencyKey": "AUD",
+        "locale": "de",
+        "name": "Norfolkinsel",
+        "continent": "Ozeanien"
+    },
+    "MP": {
+        "code": "MP",
+        "code3": "MNP",
+        "numericCode": "580",
+        "currencyKey": "USD",
+        "locale": "de",
+        "name": "Nördliche Marianen",
+        "continent": "Ozeanien"
+    },
+    "NO": {
+        "code": "NO",
+        "code3": "NOR",
+        "numericCode": "578",
+        "currencyKey": "NOK",
+        "locale": "de",
+        "name": "Norwegen",
+        "continent": "Europa"
+    },
+    "OM": {
+        "code": "OM",
+        "code3": "OMN",
+        "numericCode": "512",
+        "currencyKey": "OMR",
+        "locale": "de",
+        "name": "Oman",
+        "continent": "Asien"
+    },
+    "PK": {
+        "code": "PK",
+        "code3": "PAK",
+        "numericCode": "586",
+        "currencyKey": "PKR",
+        "locale": "de",
+        "name": "Pakistan",
+        "continent": "Asien"
+    },
+    "PW": {
+        "code": "PW",
+        "code3": "PLW",
+        "numericCode": "585",
+        "currencyKey": "USD",
+        "locale": "de",
+        "name": "Palau",
+        "continent": "Ozeanien"
+    },
+    "PS": {
+        "code": "PS",
+        "code3": "PSE",
+        "numericCode": "275",
+        "currencyKey": "JOD",
+        "locale": "de",
+        "name": "Palästinensische Autonomiegebiete",
+        "continent": "Asien"
+    },
+    "PA": {
+        "code": "PA",
+        "code3": "PAN",
+        "numericCode": "591",
+        "currencyKey": "USD",
+        "locale": "de",
+        "name": "Panama",
+        "continent": "Nordamerika"
+    },
+    "PG": {
+        "code": "PG",
+        "code3": "PNG",
+        "numericCode": "598",
+        "currencyKey": "PGK",
+        "locale": "de",
+        "name": "Papua-Neuguinea",
+        "continent": "Ozeanien"
+    },
+    "PY": {
+        "code": "PY",
+        "code3": "PRY",
+        "numericCode": "600",
+        "currencyKey": "PYG",
+        "locale": "de",
+        "name": "Paraguay",
+        "continent": "Südamerika"
+    },
+    "PE": {
+        "code": "PE",
+        "code3": "PER",
+        "numericCode": "604",
+        "currencyKey": "PEN",
+        "locale": "de",
+        "name": "Peru",
+        "continent": "Südamerika"
+    },
+    "PH": {
+        "code": "PH",
+        "code3": "PHL",
+        "numericCode": "608",
+        "currencyKey": "PHP",
+        "locale": "de",
+        "name": "Philippinen",
+        "continent": "Asien"
+    },
+    "PN": {
+        "code": "PN",
+        "code3": "PCN",
+        "numericCode": "612",
+        "currencyKey": "NZD",
+        "locale": "de",
+        "name": "Pitcairninseln",
+        "continent": "Ozeanien"
+    },
+    "PL": {
+        "code": "PL",
+        "code3": "POL",
+        "numericCode": "616",
+        "currencyKey": "PLN",
+        "locale": "de",
+        "name": "Polen",
+        "continent": "Europa"
+    },
+    "PT": {
+        "code": "PT",
+        "code3": "PRT",
+        "numericCode": "620",
+        "currencyKey": "EUR",
+        "locale": "de",
+        "name": "Portugal",
+        "continent": "Europa"
+    },
+    "PR": {
+        "code": "PR",
+        "code3": "PRI",
+        "numericCode": "630",
+        "currencyKey": "USD",
+        "locale": "de",
+        "name": "Puerto Rico",
+        "continent": "Nordamerika"
+    },
+    "QA": {
+        "code": "QA",
+        "code3": "QAT",
+        "numericCode": "634",
+        "currencyKey": "QAR",
+        "locale": "de",
+        "name": "Katar",
+        "continent": "Asien"
+    },
+    "RE": {
+        "code": "RE",
+        "code3": "REU",
+        "numericCode": "638",
+        "currencyKey": "EUR",
+        "locale": "de",
+        "name": "Réunion",
+        "continent": "Afrika"
+    },
+    "RO": {
+        "code": "RO",
+        "code3": "ROU",
+        "numericCode": "642",
+        "currencyKey": "RON",
+        "locale": "de",
+        "name": "Rumänien",
+        "continent": "Europa"
+    },
+    "RU": {
+        "code": "RU",
+        "code3": "RUS",
+        "numericCode": "643",
+        "currencyKey": "RUB",
+        "locale": "de",
+        "name": "Russland",
+        "continent": "Europa"
+    },
+    "RW": {
+        "code": "RW",
+        "code3": "RWA",
+        "numericCode": "646",
+        "currencyKey": "RWF",
+        "locale": "de",
+        "name": "Ruanda",
+        "continent": "Afrika"
+    },
+    "BL": {
+        "code": "BL",
+        "code3": "BLM",
+        "numericCode": "652",
+        "currencyKey": "EUR",
+        "locale": "de",
+        "name": "St. Barthélemy",
+        "continent": "Nordamerika"
+    },
+    "SH": {
+        "code": "SH",
+        "code3": "SHN",
+        "numericCode": "654",
+        "currencyKey": "SHP",
+        "locale": "de",
+        "name": "St. Helena",
+        "continent": "Afrika"
+    },
+    "KN": {
+        "code": "KN",
+        "code3": "KNA",
+        "numericCode": "659",
+        "currencyKey": "XCD",
+        "locale": "de",
+        "name": "St. Kitts und Nevis",
+        "continent": "Nordamerika"
+    },
+    "LC": {
+        "code": "LC",
+        "code3": "LCA",
+        "numericCode": "662",
+        "currencyKey": "XCD",
+        "locale": "de",
+        "name": "St. Lucia",
+        "continent": "Nordamerika"
+    },
+    "MF": {
+        "code": "MF",
+        "code3": "MAF",
+        "numericCode": "663",
+        "currencyKey": "EUR",
+        "locale": "de",
+        "name": "St. Martin",
+        "continent": "Nordamerika"
+    },
+    "PM": {
+        "code": "PM",
+        "code3": "SPM",
+        "numericCode": "666",
+        "currencyKey": "EUR",
+        "locale": "de",
+        "name": "St. Pierre und Miquelon",
+        "continent": "Nordamerika"
+    },
+    "VC": {
+        "code": "VC",
+        "code3": "VCT",
+        "numericCode": "670",
+        "currencyKey": "XCD",
+        "locale": "de",
+        "name": "St. Vincent und die Grenadinen",
+        "continent": "Nordamerika"
+    },
+    "WS": {
+        "code": "WS",
+        "code3": "WSM",
+        "numericCode": "882",
+        "currencyKey": "WST",
+        "locale": "de",
+        "name": "Samoa",
+        "continent": "Ozeanien"
+    },
+    "SM": {
+        "code": "SM",
+        "code3": "SMR",
+        "numericCode": "674",
+        "currencyKey": "EUR",
+        "locale": "de",
+        "name": "San Marino",
+        "continent": "Europa"
+    },
+    "ST": {
+        "code": "ST",
+        "code3": "STP",
+        "numericCode": "678",
+        "currencyKey": "STN",
+        "locale": "de",
+        "name": "São Tomé und Príncipe",
+        "continent": "Afrika"
+    },
+    "SA": {
+        "code": "SA",
+        "code3": "SAU",
+        "numericCode": "682",
+        "currencyKey": "SAR",
+        "locale": "de",
+        "name": "Saudi-Arabien",
+        "continent": "Asien"
+    },
+    "SN": {
+        "code": "SN",
+        "code3": "SEN",
+        "numericCode": "686",
+        "currencyKey": "XOF",
+        "locale": "de",
+        "name": "Senegal",
+        "continent": "Afrika"
+    },
+    "RS": {
+        "code": "RS",
+        "code3": "SRB",
+        "numericCode": "688",
+        "currencyKey": "RSD",
+        "locale": "de",
+        "name": "Serbien",
+        "continent": "Europa"
+    },
+    "SC": {
+        "code": "SC",
+        "code3": "SYC",
+        "numericCode": "690",
+        "currencyKey": "SCR",
+        "locale": "de",
+        "name": "Seychellen",
+        "continent": "Afrika"
+    },
+    "SL": {
+        "code": "SL",
+        "code3": "SLE",
+        "numericCode": "694",
+        "currencyKey": "SLL",
+        "locale": "de",
+        "name": "Sierra Leone",
+        "continent": "Afrika"
+    },
+    "SG": {
+        "code": "SG",
+        "code3": "SGP",
+        "numericCode": "702",
+        "currencyKey": "SGD",
+        "locale": "de",
+        "name": "Singapur",
+        "continent": "Asien"
+    },
+    "SX": {
+        "code": "SX",
+        "code3": "SXM",
+        "numericCode": "534",
+        "currencyKey": "ANG",
+        "locale": "de",
+        "name": "Sint Maarten",
+        "continent": "Nordamerika"
+    },
+    "SK": {
+        "code": "SK",
+        "code3": "SVK",
+        "numericCode": "703",
+        "currencyKey": "EUR",
+        "locale": "de",
+        "name": "Slowakei",
+        "continent": "Europa"
+    },
+    "SI": {
+        "code": "SI",
+        "code3": "SVN",
+        "numericCode": "705",
+        "currencyKey": "EUR",
+        "locale": "de",
+        "name": "Slowenien",
+        "continent": "Europa"
+    },
+    "SB": {
+        "code": "SB",
+        "code3": "SLB",
+        "numericCode": "090",
+        "currencyKey": "SBD",
+        "locale": "de",
+        "name": "Salomonen",
+        "continent": "Ozeanien"
+    },
+    "SO": {
+        "code": "SO",
+        "code3": "SOM",
+        "numericCode": "706",
+        "currencyKey": "SOS",
+        "locale": "de",
+        "name": "Somalia",
+        "continent": "Afrika"
+    },
+    "ZA": {
+        "code": "ZA",
+        "code3": "ZAF",
+        "numericCode": "729",
+        "currencyKey": "ZAR",
+        "locale": "de",
+        "name": "Südafrika",
+        "continent": "Afrika"
+    },
+    "SS": {
+        "code": "SS",
+        "code3": "SSD",
+        "numericCode": "710",
+        "currencyKey": "SSP",
+        "locale": "de",
+        "name": "Südsudan",
+        "continent": "Afrika"
+    },
+    "GS": {
+        "code": "GS",
+        "code3": "SGS",
+        "numericCode": "239",
+        "currencyKey": "GBP",
+        "locale": "de",
+        "name": "Südgeorgien und die Südlichen Sandwichinseln",
+        "continent": "Antarktika"
+    },
+    "ES": {
+        "code": "ES",
+        "code3": "ESP",
+        "numericCode": "724",
+        "currencyKey": "EUR",
+        "locale": "de",
+        "name": "Spanien",
+        "continent": "Europa"
+    },
+    "LK": {
+        "code": "LK",
+        "code3": "LKA",
+        "numericCode": "144",
+        "currencyKey": "LKR",
+        "locale": "de",
+        "name": "Sri Lanka",
+        "continent": "Asien"
+    },
+    "SD": {
+        "code": "SD",
+        "code3": "SDN",
+        "numericCode": "736",
+        "currencyKey": "SDG",
+        "locale": "de",
+        "name": "Sudan",
+        "continent": "Afrika"
+    },
+    "SR": {
+        "code": "SR",
+        "code3": "SUR",
+        "numericCode": "740",
+        "currencyKey": "SRD",
+        "locale": "de",
+        "name": "Suriname",
+        "continent": "Südamerika"
+    },
+    "SJ": {
+        "code": "SJ",
+        "code3": "SJM",
+        "numericCode": "744",
+        "currencyKey": "NOK",
+        "locale": "de",
+        "name": "Spitzbergen und Jan Mayen",
+        "continent": "Europa"
+    },
+    "SZ": {
+        "code": "SZ",
+        "code3": "SWZ",
+        "numericCode": "748",
+        "currencyKey": "SZL",
+        "locale": "de",
+        "name": "Eswatini",
+        "continent": "Afrika"
+    },
+    "SE": {
+        "code": "SE",
+        "code3": "SWE",
+        "numericCode": "752",
+        "currencyKey": "SEK",
+        "locale": "de",
+        "name": "Schweden",
+        "continent": "Europa"
+    },
+    "CH": {
+        "code": "CH",
+        "code3": "CHE",
+        "numericCode": "756",
+        "currencyKey": "CHF",
+        "locale": "de",
+        "name": "Schweiz",
+        "continent": "Europa"
+    },
+    "SY": {
+        "code": "SY",
+        "code3": "SYR",
+        "numericCode": "760",
+        "currencyKey": "SYP",
+        "locale": "de",
+        "name": "Syrien",
+        "continent": "Asien"
+    },
+    "TW": {
+        "code": "TW",
+        "code3": "TWN",
+        "numericCode": "158",
+        "currencyKey": "TWD",
+        "locale": "de",
+        "name": "Taiwan",
+        "continent": "Asien"
+    },
+    "TJ": {
+        "code": "TJ",
+        "code3": "TJK",
+        "numericCode": "762",
+        "currencyKey": "TJS",
+        "locale": "de",
+        "name": "Tadschikistan",
+        "continent": "Asien"
+    },
+    "TZ": {
+        "code": "TZ",
+        "code3": "TZA",
+        "numericCode": "834",
+        "currencyKey": "TZS",
+        "locale": "de",
+        "name": "Tansania",
+        "continent": "Afrika"
+    },
+    "TH": {
+        "code": "TH",
+        "code3": "THA",
+        "numericCode": "764",
+        "currencyKey": "THB",
+        "locale": "de",
+        "name": "Thailand",
+        "continent": "Asien"
+    },
+    "TL": {
+        "code": "TL",
+        "code3": "TLS",
+        "numericCode": "626",
+        "currencyKey": "USD",
+        "locale": "de",
+        "name": "Timor-Leste",
+        "continent": "Asien"
+    },
+    "TG": {
+        "code": "TG",
+        "code3": "TGO",
+        "numericCode": "768",
+        "currencyKey": "XOF",
+        "locale": "de",
+        "name": "Togo",
+        "continent": "Afrika"
+    },
+    "TK": {
+        "code": "TK",
+        "code3": "TKL",
+        "numericCode": "772",
+        "currencyKey": "NZD",
+        "locale": "de",
+        "name": "Tokelau",
+        "continent": "Ozeanien"
+    },
+    "TO": {
+        "code": "TO",
+        "code3": "TON",
+        "numericCode": "776",
+        "currencyKey": "TOP",
+        "locale": "de",
+        "name": "Tonga",
+        "continent": "Ozeanien"
+    },
+    "TT": {
+        "code": "TT",
+        "code3": "TTO",
+        "numericCode": "780",
+        "currencyKey": "TTD",
+        "locale": "de",
+        "name": "Trinidad und Tobago",
+        "continent": "Nordamerika"
+    },
+    "TN": {
+        "code": "TN",
+        "code3": "TUN",
+        "numericCode": "788",
+        "currencyKey": "TND",
+        "locale": "de",
+        "name": "Tunesien",
+        "continent": "Afrika"
+    },
+    "TR": {
+        "code": "TR",
+        "code3": "TUR",
+        "numericCode": "792",
+        "currencyKey": "TRY",
+        "locale": "de",
+        "name": "Türkei",
+        "continent": "Asien"
+    },
+    "TM": {
+        "code": "TM",
+        "code3": "TKM",
+        "numericCode": "795",
+        "currencyKey": "TMT",
+        "locale": "de",
+        "name": "Turkmenistan",
+        "continent": "Asien"
+    },
+    "TC": {
+        "code": "TC",
+        "code3": "TCA",
+        "numericCode": "796",
+        "currencyKey": "USD",
+        "locale": "de",
+        "name": "Turks- und Caicosinseln",
+        "continent": "Nordamerika"
+    },
+    "TV": {
+        "code": "TV",
+        "code3": "TUV",
+        "numericCode": "798",
+        "currencyKey": "AUD",
+        "locale": "de",
+        "name": "Tuvalu",
+        "continent": "Ozeanien"
+    },
+    "UG": {
+        "code": "UG",
+        "code3": "UGA",
+        "numericCode": "800",
+        "currencyKey": "UGX",
+        "locale": "de",
+        "name": "Uganda",
+        "continent": "Afrika"
+    },
+    "UA": {
+        "code": "UA",
+        "code3": "UKR",
+        "numericCode": "804",
+        "currencyKey": "UAH",
+        "locale": "de",
+        "name": "Ukraine",
+        "continent": "Europa"
+    },
+    "AE": {
+        "code": "AE",
+        "code3": "ARE",
+        "numericCode": "784",
+        "currencyKey": "AED",
+        "locale": "de",
+        "name": "Vereinigte Arabische Emirate",
+        "continent": "Asien"
+    },
+    "GB": {
+        "code": "GB",
+        "code3": "GBR",
+        "numericCode": "826",
+        "currencyKey": "GBP",
+        "locale": "de",
+        "name": "Vereinigtes Königreich",
+        "continent": "Europa"
+    },
+    "US": {
+        "code": "US",
+        "code3": "USA",
+        "numericCode": "840",
+        "currencyKey": "USD",
+        "locale": "de",
+        "name": "Vereinigte Staaten",
+        "continent": "Nordamerika"
+    },
+    "UM": {
+        "code": "UM",
+        "code3": "UMI",
+        "numericCode": "581",
+        "currencyKey": "USD",
+        "locale": "de",
+        "name": "Amerikanische Überseeinseln",
+        "continent": "Ozeanien"
+    },
+    "UY": {
+        "code": "UY",
+        "code3": "URY",
+        "numericCode": "858",
+        "currencyKey": "UYU",
+        "locale": "de",
+        "name": "Uruguay",
+        "continent": "Südamerika"
+    },
+    "UZ": {
+        "code": "UZ",
+        "code3": "UZB",
+        "numericCode": "860",
+        "currencyKey": "UZS",
+        "locale": "de",
+        "name": "Usbekistan",
+        "continent": "Asien"
+    },
+    "VU": {
+        "code": "VU",
+        "code3": "VUT",
+        "numericCode": "548",
+        "currencyKey": "VUV",
+        "locale": "de",
+        "name": "Vanuatu",
+        "continent": "Ozeanien"
+    },
+    "VE": {
+        "code": "VE",
+        "code3": "VEN",
+        "numericCode": "862",
+        "currencyKey": "VES",
+        "locale": "de",
+        "name": "Venezuela",
+        "continent": "Südamerika"
+    },
+    "VN": {
+        "code": "VN",
+        "code3": "VNM",
+        "numericCode": "704",
+        "currencyKey": "VND",
+        "locale": "de",
+        "name": "Vietnam",
+        "continent": "Asien"
+    },
+    "VG": {
+        "code": "VG",
+        "code3": "VGB",
+        "numericCode": "092",
+        "currencyKey": "GBP",
+        "locale": "de",
+        "name": "Britische Jungferninseln",
+        "continent": "Nordamerika"
+    },
+    "VI": {
+        "code": "VI",
+        "code3": "VIR",
+        "numericCode": "850",
+        "currencyKey": "USD",
+        "locale": "de",
+        "name": "Amerikanische Jungferninseln",
+        "continent": "Nordamerika"
+    },
+    "WF": {
+        "code": "WF",
+        "code3": "WLF",
+        "numericCode": "876",
+        "currencyKey": "XPF",
+        "locale": "de",
+        "name": "Wallis und Futuna",
+        "continent": "Ozeanien"
+    },
+    "EH": {
+        "code": "EH",
+        "code3": "ESH",
+        "numericCode": "732",
+        "currencyKey": "MAD",
+        "locale": "de",
+        "name": "Westsahara",
+        "continent": "Afrika"
+    },
+    "YE": {
+        "code": "YE",
+        "code3": "YEM",
+        "numericCode": "887",
+        "currencyKey": "YER",
+        "locale": "de",
+        "name": "Jemen",
+        "continent": "Asien"
+    },
+    "ZM": {
+        "code": "ZM",
+        "code3": "ZMB",
+        "numericCode": "894",
+        "currencyKey": "ZMW",
+        "locale": "de",
+        "name": "Sambia",
+        "continent": "Afrika"
+    },
+    "ZW": {
+        "code": "ZW",
+        "code3": "ZWE",
+        "numericCode": "716",
+        "currencyKey": "USD",
+        "locale": "de",
+        "name": "Simbabwe",
+        "continent": "Afrika"
+    }
+}

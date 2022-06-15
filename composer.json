@@ -1,13 +1,13 @@
 {
-    "name": "tobento/service-user",
+    "name": "tobento/service-country",
     "type": "library",
-    "description": "A user interface for PHP applications.",
+    "description": "Country interfaces and resources for PHP applications.",
     "keywords": [
         "tobento",
         "package",
         "PHP",
-        "user",
-        "address"
+        "country",
+        "countries"
     ],
     "homepage": "https://www.tobento.ch",
     "license": "MIT",
@@ -31,12 +31,12 @@
     },
     "autoload": {
         "psr-4": {
-            "Tobento\\Service\\User\\": "src"
+            "Tobento\\Service\\Country\\": "src"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "Tobento\\Service\\User\\Test\\": "tests"
+            "Tobento\\Service\\Country\\Test\\": "tests"
         }
     },
     "scripts": {
